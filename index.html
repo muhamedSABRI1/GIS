@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>ZAIN(GIS)</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+            margin: 20px;
+        }
+        header, footer {
+            background-color: #27ae60;
+            padding: 10px;
+            text-align: center;
+        }
+        #map {
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بك في عالم نظم المعلومات الجغرافية (GIS)</h1>
+    </header>
+
+    <section>
+        <h2>ما هو نظام المعلومات الجغرافية (GIS)؟</h2>
+        <p>نظام المعلومات الجغرافية (GIS) هو نظام حاسوبي لجمع وإدارة وتحليل البيانات المكانية. يدمج بين البيانات المكانية (الموقع) والبيانات الوصفية (المعلومات حول الموقع)، مما يساعد في فهم الأنماط والعلاقات الجغرافية. <a href="https://www.esri.com/ar-sa/what-is-gis/overview" target="_blank">[المصدر]</a></p>
+    </section>
+
+    
+
+    <section>
+        <h2>تطبيقات نظم المعلومات الجغرافية</h2>
+        <ul>
+            <li><strong>التخطيط الحضري:</strong> يساعد في تخطيط استخدام الأراضي وتطوير المدن.</li>
+            <li><strong>إدارة الموارد الطبيعية:</strong> مراقبة وإدارة الغابات والمياه والموارد الأخرى.</li>
+            <li><strong>النقل والمواصلات:</strong> تحسين شبكات الطرق وتخطيط مسارات النقل.</li>
+            <li><strong>الاستجابة للطوارئ:</strong> تحديد المناطق المتضررة وتنسيق جهود الإغاثة.</li>
+            <li><strong>الزراعة:</strong> تحليل التربة وتخطيط المحاصيل لزيادة الإنتاجية.</li>
+        </ul>
+    </section>
+<hr> 
+<img src="Advanced-GIS-ArcGIS-Pro.jpg" width="500" alt=""> <br>
+  <p><h5><ul><li>لمعرفة معلومات اكثر عن gis  <button><a href="https://www.arcgis.com/home/index.html">اضغط هنا</a></button></p></h5></li></ul>
+    <details>تقنية رسم الخرائط وتحليل البيانات التي تدعم اتخاذ القرارات الخاصة بالأعمال، وتعزز كفاءة العمليات الحكومية، وتساهم في تغيير العالم بهدوء.
+
+
+    لفهم الكم الهائل من البيانات في عالمنا الحالي، يمكننا رسم خريطة لها.
+    
+    
+    عندما نقوم بتمثيل البيانات بشكل مرئي ونحللها على الخريطة، تظهر الروابط والرؤى المخفية.
+    
+    
+    تتيح لنا نظم المعلومات الجغرافية فهم عالمنا بصورة أعمق، مما يؤدي إلى توجيه القرارات والإجراءات.<summary><b1>ما هي تقنية رسم خرائط نظم المعلومات الجغرافية</b1></summary></details>
+    <hr>
+    <div id="home">
+        <h1>مكونات نظم المعلومات الجغرافية (GIS)</h1>
+        <p>
+          </p>
+          <div class="sub"><h3>البيانات المكانية والوصفية</h3>
+          <p>تأحد هذه الطرق تدعى بالمعلومات الأولية والتي يمكن جمعها بواسطة المساحة الأرضية، والتصوير الجوي - AERIAL PHOTOGRAPHY, والاستشعار عن بعد، ونظام تحديد المواقع العالمي</p>
+        <img src="WhatsApp Image 2025-04-08 at 16.18.02_3cc8bc78.jpg" width="100%"> </div>
+          <div class="sub"><h3>الأجهزة الحاسوبية والبرامج التطبيقية</h3>
+          <p>تمثل الحواسيب العنصر الدماغي في نظام GIS حيث تقوم بتحليل ومعالجة البيانات التي تم تخزينها في قواعد بيانات ضخمة</p> <img src="WhatsApp Image 2025-04-08 at 16.10.07_57146e10.jpg" width="100%"></div>
+          <div class="sub"><h3>برمجيات حرة</h3><p>هذه البرامج Quantum GIS وهو برنامج صغير يسمح للمستخدم بتهيئة وإنشاء الخرائط على الحاسوب الشخصي، كما يدعم العديد من صيغ البيانات المكانية مثل ESRI ShapeFile, geotiff. توجد أيضا برامجيات مفتوحة المصدر أخرى مثل: GRASS GIS، SAGA GIS</p> 
+          <img src="WhatsApp Image 2025-04-08 at 16.10.07_e7a4eded.jpg" width="65%"></div>
+     
+       </div>
+       <style>
+        #home{
+          background-color: #27ae60;
+        }
+        .sub {background-color: rgb(118, 207, 122);
+        display: inline-block ;
+        width: 33%;
+        text-align: center;}
+      </style>
+      <style> #table {
+        width: 50%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+  
+      th, td {
+        border: 1px solid #ddd;
+        padding: 12px;
+      }
+  
+      th {
+        background-color: #27ae60;
+        color: white;
+      }
+  
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+  
+  
+    </style>
+  
+    <h1>جدول يوضح تطبيقات نظم المعلومات الجغرافية (GIS)</h1>
+  
+    <table>
+      <tr>
+        <th>التطبيق</th>
+        <th>الوصف</th>
+      </tr>
+      <tr>
+        <td>التخطيط العمراني</td>
+        <td>يساعد في توزيع الخدمات وتخطيط الطرق والمباني بشكل ذكي.</td>
+      </tr>
+      <tr>
+        <td>إدارة الموارد الطبيعية</td>
+        <td>تحليل وتوزيع الغابات، المياه، الأراضي الزراعية.</td>
+      </tr>
+      <tr>
+        <td>إدارة الكوارث</td>
+        <td>تحديد مناطق الخطورة مثل السيول والحرائق وتسهيل خطط الطوارئ.</td>
+      </tr>
+      <tr>
+        <td>الخدمات الحكومية</td>
+        <td>تطوير الخرائط التفاعلية لتوزيع المدارس، المستشفيات، والمراكز الخدمية.</td>
+      </tr>
+      <tr>
+        <td>النقل والمواصلات</td>
+        <td>تحليل الشبكات المرورية وتحديد أفضل المسارات.</td>
+      </tr>
+    </table>
+    
+    <hr>
+   <b> <p>الــنوع</p></b>
+   <b> <input type="checkbox"> ذكر</b>
+   
+   <b> <input type="checkbox"> انثي</b> <br>
+<form>
+<label for="الاسم">الاسم</label>
+<input type="text"الاسم> <br>
+<label for="password">password</label>
+<input type="password"name=
+</form>
+ 
+    
+ </form>
+ <hr>
+   
+ <style>
+  .block {
+    display: block;
+    background-color: #e70b0b;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+  }
+
+  .inline {
+    display: inline;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .inline-block {
+    display: inline-block;
+    background-color: #1edebb;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+  }
+</style>
+
+
+<h2>البيانات المكانية (Spatial Data)</h2>
+
+<div class="block">البيانات النقطية (مثل مواقع الآبار).</div>
+<div class="block">البيانات الخطية (مثل شبكات الطرق).</div>
+<div class="block">البيانات المساحية أو المضلعية (مثل الحدود الإدارية للمدن).</div>
+<h2>البيانات الوصفية (Attribute Data)</h2>
+
+<span class="inline">مثل: اسم المدينة</span>
+<span class="inline">عدد سكانها</span>
+<br>
+<h2><h2>البرمجيات (Software)</h2>
+</h2>
+<div class="inline-block">ArcGIS (من شركة Esri)</div><br>
+<div class="inline-block">QGIS (مفتوح المصدر)</div><br>
+
+
+  
+  <style>
+    .A {
+      width: 270pt;
+      height: 150pt;
+      background-color: #d09f24;
+      color: white;
+      padding: 10px;
+      margin: 80px auto;
+      text-align:left;
+      font-size: 18px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    
+  
+  </style>
+
+<div class="A">أهمية GIS
+  <br>
+  
+  1-يوفر أدوات قوية لفهم العلاقات المكانية بين الظواهري.
+  <br>
+  2-يساعد صناع القرار على اتخاذ قرارات مبنية على بيانات دقيقة.<br>
+  
+  3- يقلل من التكاليف ويحسن كفاءة إدارة الموارد.<br>
+  
+  4- يدعم التخطيط المستدام والتنمية المتوازنة.
+
+  <br>
+  
+   <br></div>**
+  
+  
+    
+</body>
+</html>
